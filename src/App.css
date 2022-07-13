@@ -41,16 +41,18 @@ table, th, td {
 }
 
 .subtopic div:nth-child(1) {
-  width: 50%;
+  width: 45%;
   border-bottom: black solid 2px;
   border-right: black solid 2px;
 }
 
 .subtopic div:nth-child(2) {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
+  align-items: center;
+  gap: 12px;
+  margin-left: 12px;
 }
 
 h3{

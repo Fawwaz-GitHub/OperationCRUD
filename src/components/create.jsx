@@ -17,7 +17,7 @@ const Create = () => {
     const postData = (e) => {
       e.preventDefault(); //learnt
       console.log(objects);
-      axios.post('https://62625123327d3896e284be92.mockapi.io/crud', objects)
+      axios.post('https://backendforcrud.herokuapp.com/create', objects)
       .then(res => {
         console.log("Posted");
         navigate('/read')

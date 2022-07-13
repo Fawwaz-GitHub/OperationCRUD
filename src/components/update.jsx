@@ -14,7 +14,6 @@ export default function Update() {
     }, [])
 
     const [id, setID] = useState(null)
-
     const [firstname, setFirstName] = useState('');
     const [lastname, setLastName] = useState('');
     const [checkbox, setCheckbox] = useState(false);
@@ -27,7 +26,7 @@ export default function Update() {
 
     const updateAPIData = (e) => {
         e.preventDefault();
-        axios.put(`https://62625123327d3896e284be92.mockapi.io/crud/${id}`, objects)
+        axios.put(`https://backendforcrud.herokuapp.com/update/${id}`, objects)
         .then(()=> {
             navigate('/read')
         })
